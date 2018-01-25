@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+div.box{
+width:580px;
+height:600px;
+top:50px;
+marign-top:20px;
+left:30%;
+border:5px solid #f1f1f1;
+position: absolute;
+border-radius:5px;
+
+
+}
+
+div.letterpage{
+
+width:490px;
+height:480px;
+position: absolute;
+top:40px; 
+left:50px;
+border:1px solid #639fb6;
+
+}
+
+div#header{
+
+border:1px solid  #a0d9ef;
+background-color:#a0d9ef;
+height:50px;
+text-align: center;
+padding-top:13px;
+color:white;
+font-size:20px;
+font-family: HY강B;
+
+}
+label.recipient{
+padding-top:20px;
+font-family: HY강B;
+font-size:15px
+
+
+}
+div.writing_area{
+border:1px solid  #b9d5d5 ;
+padding-bottom:20px;
+font-family: HY강B;
+font-size:15px
+}
+label{
+padding-left:10px;
+}
+input{
+border:1px solid #c9d5d5;
+border-radius: 5px;
+margin-left:10px;
+font-family: HY강B;
+font-size:15px;
+text-align:center;
+
+}
+
+
+
+
+button.btn-info{
+ margin-top:10px;
+ border-radius: 5px;
+ float:right;
+ width:120px;
+
+color:white;
+border-color:white;
+margin-right:10px;
+
+}
+</style>
+<body>
+<div class="box">
+	<div class="letterpage">
+		<div id="header">쪽지보내세요!</div>
+            <label for="who" class="recipient"> 받는사람</label>
+            <input type = "text" readonly value = "승창 님"/>
+            <hr>
+            
+            <div class="writing_area">
+               <textarea id="writeNote" style="resize:none;" rows="12" cols="65"></textarea>
+            </div>
+            <div class="let">
+            	<button type="button" class="btn btn-info"  style="background-color: #ff80a0; ">
+           		<span class="glyphicon glyphicon-envelope" style="font-family: HY강B;"> 쪽지보내기</span></button>   
+           	<button type="button"   class="btn btn-info" style="background-color: #ffc0d0">
+           	<span class="glyphicon glyphicon-remove" > 취소하기</span></button> 
+          
+	</div>
+
+	</div>
+</div>
+
+</body>
+</html>
